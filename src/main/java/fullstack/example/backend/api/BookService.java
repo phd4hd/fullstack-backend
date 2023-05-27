@@ -16,7 +16,7 @@ public class BookService {
         return repository.findAll();
     }
 
-    public Optional<Book> findMovieByIsbn10(String isbn10) {
-        return repository.findMovieByIsbn10(isbn10);
+    public Optional<Book> findBookByIsbn10(String isbn10) {
+        return repository.findBookByIsbn10(isbn10);
     }
 }

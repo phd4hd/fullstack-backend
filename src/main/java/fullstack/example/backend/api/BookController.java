@@ -19,14 +19,14 @@ public class BookController {
     private BookService service;
 
     @GetMapping
-    public ResponseEntity<List<Book>> getMovies() {
+    public ResponseEntity<List<Book>> getBooks() {
         return new ResponseEntity<>(
                 service.findAllBooks(), HttpStatus.OK);
     }
 
     @GetMapping("/{isbn10}")
-    public ResponseEntity<Optional<Book>> getSingleMovie(@PathVariable String isbn10){
-        return new ResponseEntity<Optional<Book>>(service.findMovieByIsbn10(isbn10),
+    public ResponseEntity<Optional<Book>> getSingleBook(@PathVariable String isbn10){
+        return new ResponseEntity<Optional<Book>>(service.findBookByIsbn10(isbn10),
                 HttpStatus.OK);
     }
 }
