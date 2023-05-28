@@ -19,7 +19,7 @@ To build this backend you need the following software
 - Install IDEA IntelliJ
 - Clone the backend repository with IntelliJ
   - Choose 'File -> New -> Project from Version Control'
-  - Enter 'https://github.com/phd4hd/fullstack-backend' as URL
+  - Enter 'https://github.com/phd4hd/fullstack-backend' as URL, or your forked GitHub project website
   - If asked, you trust this project
 - After the project has loaded you must sync to install all missing dependencies
   - Right-Click on project name in Project explorer
@@ -44,19 +44,19 @@ To build this backend you need the following software
   - Open file 'src/main/resources/.env'
     - to access localhost as database it should read
 
-         MONGO_TYPE="mongodb"
-         MONGO_CLUSTER="localhost"
-         MONGO_DATABASE="fullstack_db"
-         MONGO_USERNAME="madmin"
-         MONGO_PASSWORD="geheim123"
+          MONGO_TYPE="mongodb"
+          MONGO_CLUSTER="localhost"
+          MONGO_DATABASE="fullstack_db"
+          MONGO_USERNAME="madmin"
+          MONGO_PASSWORD="geheim123"
 
     - to access your MongoDB Atlas database it should read similiar to
 
-         MONGO_TYPE="mongodb+srv"
-         MONGO_CLUSTER="your-cluster-host-name"
-         MONGO_DATABASE="fullstack_db"
-         MONGO_USERNAME="your-database-username"
-         MONGO_PASSWORD="your-database-username-password"
+          MONGO_TYPE="mongodb+srv"
+          MONGO_CLUSTER="your-cluster-host-name"
+          MONGO_DATABASE="fullstack_db"
+          MONGO_USERNAME="your-database-username"
+          MONGO_PASSWORD="your-database-username-password"
 
 ## Testing
 
@@ -88,10 +88,10 @@ Install Postman and skip the login request
 - Switch to 'Body' and choose 'raw' and 'JSON'
 - Enter in the field below
 
-    {
-      "isbn10": "0140306765",
-      "reviewText": "Some comment"
-    }
+      {
+        "isbn10": "0140306765",
+        "reviewText": "Some comment"
+      }
 
 - Click 'Send'
 - It should return a response with some id and the text with 'Some comment'
