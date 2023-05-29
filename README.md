@@ -9,6 +9,7 @@ e.g. to test the frontend, you can use my
 To build this backend you need the following software
 
 - [JDK Development Kit 17.0.7 downloads](https://www.oracle.com/java/technologies/downloads/#java17)
+- [Git Version Control](https://git-scm.com/downloads)
 - [IDEA IntelliJ](https://www.jetbrains.com/idea/)
 - [Postman](https://www.postman.com/downloads/)
 - if you plan to modify this project (to do the exercise) please fork it first
@@ -16,7 +17,9 @@ To build this backend you need the following software
 ## Setup
 
 - Install JDK 17
+- Install Git
 - Install IDEA IntelliJ
+- It not automatically detected, go to 'File -> Settings -> Version Control -> Git' and set the 'Path to Git executable'
 - Clone the backend repository with IntelliJ
   - Choose 'File -> New -> Project from Version Control'
   - Enter 'https://github.com/phd4hd/fullstack-backend' as URL, or your forked GitHub project website
